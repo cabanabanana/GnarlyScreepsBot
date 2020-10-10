@@ -6,7 +6,7 @@ namespace Spawner {
         Object.keys(creeps).map(creepName => {
             const creep = creeps[creepName];
             if (creep.memory.role === 'harvester') harvesters += 1;
-            if (creep.memory.role === 'upgrader') harvesters += 1;
+            if (creep.memory.role === 'upgrader') upgrader += 1;
         });
 
         if (harvesters < 2) {
