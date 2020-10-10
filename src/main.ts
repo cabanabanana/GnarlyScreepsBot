@@ -1,17 +1,17 @@
-import roleHarvester from './role.harvester';
-import roleUpgrader from './role.upgrader';
-import roleSpawner from './role.spawner';
+import Harvester from './roles/harvester';
+import Upgrader from './roles/upgrader';
+import Spawner from './roles/spawner';
 
 const loop = () => {
-    roleSpawner.run(Game.creeps);
+    Spawner.run(Game.creeps);
 
     for(var name in Game.creeps) {
         var creep = Game.creeps[name];
         if(creep.memory.role == 'harvester') {
-            roleHarvester.run(creep);
+            Harvester.run(creep);
         }
         if(creep.memory.role == 'upgrader') {
-            roleUpgrader.run(creep);
+            Upgrader.run(creep);
         }
     }
 };

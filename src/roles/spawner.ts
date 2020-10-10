@@ -7,7 +7,7 @@ namespace Spawner {
             if (creep.memory.role === 'harvester') harvesters += 1;
         });
 
-        if (harvesters < 3) {
+        if (harvesters < 1) {
             const newName = 'Harvester' + Game.time;
 
             Game.spawns['Spawn1'].spawnCreep(

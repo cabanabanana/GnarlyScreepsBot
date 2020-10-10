@@ -2,6 +2,6 @@
 
 1. Click Manage Account
 	1. Click Link to Github and Authorise
-	2. If no password is set for screeps, set a password
-2. replace email and password in `Grunfile.js`
-3. `npm run deploy`
+	2. If no token is set for screeps, generate one with full access
+2. replace token in `Screeps.json`
+3. `npm run deploy:main` or `npm run deploy:sim`
