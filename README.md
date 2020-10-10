@@ -1,7 +1,12 @@
-## How to automatically deploy to your Screeps
+## Connect Screeps to your GitHub account
 
-1. Click Manage Account
+1. Inside Screeps, click 'Manage Account'
 	1. Click Link to Github and Authorise
-	2. If no token is set for screeps, generate one with full access
-2. replace token in `Screeps.json`
-3. `npm run deploy:main` or `npm run deploy:sim`
+	2. If no token has been created for screeps, generate one with full access
+2. Copy the `screeps.sample.js` to `screeps.js` and update the token
+
+###  npm commands
+
+* `npm run deploy:main`
+* `npm run deploy:sim`
+* `npm run watch`
